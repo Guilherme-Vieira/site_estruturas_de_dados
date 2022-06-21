@@ -8,49 +8,179 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Estrutura de dados</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/python-logo01.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Tutorial</title>
 </head>
 
+
 <body>
-    <nav class="navbar navbar-dark bg-dark text-center">
-        <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="imagens/python-logo01.png" alt="" width="30" height="24">
+    <header>
+        <nav class="navbar navbar-dark bg-dark text-center">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagens/python-logo01.png" alt="logo" width="30" height="24">
                 </a>
-            <a class="navbar-brand" href="#">Estrutura de dados</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
+                <a class="navbar-brand" href="index.html">Estrutura de dados</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Listas, Pilhas e Filas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Arvore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Listas Encadeadas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active">Listas Duplamente Encadeadas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <article>
+            <div class="row text-center p-4 text-white">
+                <h1>Tutorial de Python</h1>
+                <p>Esse tutorial é para estudo!!</p>
+            </div>
+
+            <div class="container text-center text-white" id="card">
+                <div class="p-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div>
+                                <h3>O que é Python</h3>
+                                <p>Python é uma linguagem de programação de alto nível — ou High Level Language
+                                    —,
+                                    dinâmica,
+                                    interpretada, modular, multiplataforma e orientada a objetos — uma forma
+                                    específica de
+                                    organizar softwares onde, a grosso modo, os procedimentos estão submetidos
+                                    às
+                                    classes, o que
+                                    possibilita maior controle e estabilidade de códigos para projetos de
+                                    grandes
+                                    proporções.</p>
+                                <p>
+                                    Por ser uma linguagem de sintaxe relativamente simples e de fácil
+                                    compreensão,
+                                    ganhou
+                                    popularidade entre profissionais da indústria tecnológica que não são
+                                    especificamente
+                                    programadores, como engenheiros, matemáticos, cientistas de dados,
+                                    pesquisadores
+                                    e outros.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <img src="/imagens/python.jpg" class="img-fluid rounded-3" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="text-center">
+            <h3 class="text-white p-4">Veja sobre tipos primitivos</h3>
+            <div>
+                <nav class="nav nav-tabs" id="nav-tab" role="tablist">
+
+                    <button class="nav-link active fs-md-3 text-black fw-bold" id="nav-int-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-int" type="button" role="tab" aria-controls="nav-int"
+                        aria-selected="true">Inteiro</button>
+                    <button class="nav-link text-black fw-bold" id="nav-float-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-float" type="button" role="tab" aria-controls="nav-float"
+                        aria-selected="false">Float</button>
+                    <button class="nav-link text-black fw-bold" id="nav-bool-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-bool" type="button" role="tab" aria-controls="nav-bool"
+                        aria-selected="false">Bool</button>
+                    <button class="nav-link text-black fw-bold" id="nav-str-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-str" type="button" role="tab" aria-controls="nav-str"
+                        aria-selected="false">String</button>
+
+                </nav>
+                <div class="tab-content card p-4" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-int" role="tabpanel" aria-labelledby="nav-int-tab">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-md-6 p-5 align-items-center">
+                                <p>
+                                    O tipo inteiro é um tipo composto por caracteres numéricos (algarismos) inteiros.
+                                    É um tipo usado para um número que pode ser escrito sem um componente decimal,
+                                    podendo ter ou não sinal, isto é: ser positivo ou negativo.
+                                    Por exemplo, 21, 4, 0, e −2048 são números inteiros, enquanto 9.75, 1/2, 1.5 não
+                                    são.
+                                </p>
+                                <p>Exemplo:</p>
+                            </div>
+                            <div class="col-md-6 p-4">
+                                <img class="img-fluid rounded-3" src="/imagens/int.png" alt="int" id="int">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-float" role="tabpanel" aria-labelledby="nav-float-tab">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-md-6 p-5 align-items-center">
+                                <p>
+                                    É um tipo composto por caracteres numéricos (algarismo) decimais.
+                                    O famoso ponto flutuante é um tipo usado para números racionais (números que podem
+                                    ser representados por uma fração) informalmente conhecido como “número quebrado”.
+                                </p>
+                                <p>Exemplo:</p>
+                            </div>
+                            <div class="col-md-6 p-4">
+                                <img class="img-fluid rounded-3" src="/imagens/float.png" alt="float">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-bool" role="tabpanel" aria-labelledby="nav-bool-tab">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-md-6 p-5 align-items-center">
+                                <p>
+                                    Tipo de dado lógico que pode assumir apenas dois valores: falso ou verdadeiro (False
+                                    ou True em Python).
+                                    Na lógica computacional, podem ser considerados como 0 ou 1.
+                                </p>
+                                <p>Exemplo:</p>
+                            </div>
+                            <div class="col-md-6 p-4">
+                                <img class="img-fluid rounded-3" src="/imagens/bool.png" alt="bool">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-str" role="tabpanel" aria-labelledby="nav-str-tab">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-md-6 p-5 align-items-center">
+                                <p>
+                                    Em Python, o tipo string funciona como um array de caracteres. Por isso, é possível
+                                    acessar cada caractere através de seu índice correspondente. Para declarar uma
+                                    string, basta informar o conteúdo delimitado por aspas ou aspas duplas.
+                                </p>
+                                <p>Exemplo:</p>
+                            </div>
+                            <div class="col-md-6 p-4">
+                                <img class="img-fluid" src="/imagens/str.png" alt="str">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <div class="containe">
-        <div class="row text-center p-4">
-            <h1>Tutorial de Python</h1>
-            <article>
-                <p>Esse tutorial é para estudo!!</p>
-                <p></p>
-
-            </article>
-        </div>
     </div>
-
+    <footer class="container-fluid p-5 bg-dark text-center">
+        <p class="secondary-color text-white">Guilherme Vieira &copy; 2022</p>
+        </div>
+    </footer>
 
 
 
