@@ -49,6 +49,61 @@
             </div>
         </nav>
     </header>
+    <article class="container text-center">
+        <div class="text-white">
+            <h1 class=" p-4">Tupla e Dicionário</h1>
+            <div class="row">
+                <h2 class="p-3">O que é Tupla?</h2>
+                <p>Tupla é um tipo de estrutura de dados utilizada em Python que funciona de modo semelhante a uma
+                    lista,
+                    entretanto, com a característica principal de ser imutável. Isso significa que quando uma tupla é
+                    criada
+                    não
+                    é possível adicionar, alterar ou remover seus elementos. Geralmente, ela é utilizada para adicionar
+                    tipos
+                    diferentes de informações, porém, com a quantidade de elementos definidos.
+                    Podemos utilizar uma tupla de dois elementos, por exemplo, para indicar a sigla do estado em uma
+                    posição
+                    e o
+                    nome dele em outra. Portanto, ela é uma boa opção quando queremos trabalhar com informações
+                    diferentes
+                    em
+                    uma mesma variável e quando queremos que esses dados não sofram alterações.</p>
+                <p>Entretanto, ela não é completamente imutável, pois quando armazena outro objeto, como uma lista, os
+                    dados
+                    armazenados nesse elemento podem ser modificados. É preciso entender, porém, que nesse caso não é
+                    alterado a estrutura da tupla, apenas o conteúdo desse objeto, que é passado por referência.
+                    Imagine que temos uma tupla que contém dois elementos, uma string com o nome de uma pessoa, e uma
+                    lista
+                    com os nomes de seus filhos. Perceba que a lista de filhos pode e deve sofrer alterações, caso a
+                    pessoa
+                    tenha um novo filho. Entretanto, a estrutura da tupla não foi alterada, pois ela continua com os
+                    mesmos
+                    elementos e função.</p>
+            </div>
+            <h3>Como declarar uma Tupla?</h3>
+            <div class="row">
+                <p class="col-md-6 p-3">A declaração de tuplas em Python é muito simples, basta adicionar seus elementos
+                    entre parênteses e separados por vírgula. É importante dizer que a utilização dos parênteses não é
+                    obrigatória. No entanto, é considerada uma boa prática. O uso da vírgula é exigido, pois se ela
+                    tiver apenas um elemento, é preciso colocar uma vírgula depois dele para que o Python entenda que se
+                    trata de uma tupla. </p>
+                <img class="col-md-6 rounded-3 mx-auto d-block img-fluid p-3" src="/imagens/tupla.png"
+                    alt="exemplo de tupla">
+            </div>
+            <h2 class="p-4">O que é Dicionário?</h2>
+            <p>Dicionário é um tipo diferente de coleção. Ele é um tipo de mapeamento nativo do Python. Um mapa é uma
+                coleção associativa desordenada. A associação, ou mapeamento, é feita a partir de uma chave, que pode
+                ser qualquer tipo imutável, para um valor, que pode ser qualquer objeto de dados do Python.
+                Como exemplo, vamos criar um dicionário para traduzir palavras em inglês para Espanhol. Para este
+                dicionário, as chaves são strings.
+                Uma maneira de criar um dicionário é começar com o dicionário vazio e adicionar pares chave-valor. O
+                dicionário vazio é denotado { }</p>
+                <img class="p-3"src="/imagens/dicionario.png" alt="exemplo de dicionario">
+                <p>Não importa em que ordem escrevemos os pares. Os valores em um dicionário são acessados com chaves, não com índices, por isso não há necessidade de se preocupar com a ordenação.</p>
+        </div>
+
+    </article>
     <footer class="container-fluid p-5 bg-dark text-center">
         <p class="secondary-color text-white">Guilherme Vieira &copy; 2022</p>
     </footer>
