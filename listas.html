@@ -124,66 +124,80 @@
                 <h4 class="text-center">Mais sobre listas</h4>
                 <p>O tipo de dado lista tem ainda mais métodos. Aqui estão apresentados todos os métodos de objetos do
                     tipo lista:</p>
-                <ul>
-                    <li>
-                        list.append(x) <br>
-                        Adiciona um item ao fim da lista. Equivalente a a[len(a):] = [x].
-                    </li> <br>
-                    <li>
-                        list.extend(iterable) <br>
+            </div>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">list.append(x)</div>
+                        CAdiciona um item ao fim da lista. Equivalente a a[len(a):] = [x].
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold">list.extend(iterable)</div>
                         Prolonga a lista, adicionando no fim todos os elementos do argumento iterable passado como
                         parâmetro. Equivalente a a[len(a):] = iterable.
-                    </li> <br>
-                    <li>
-                        list.insert(i, x) <br>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold"> list.insert(i, x)</div>
                         Insere um item em uma dada posição. O primeiro argumento é o índice do elemento antes do qual
                         será feita a inserção, assim a.insert(0, x) insere um elemento na frente da lista e
                         a.insert(len(a), x) e equivale a a.append(x).
-                    </li> <br>
-                    <li>
-                        list.remove(x) <br>
+                    </div>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold"> list.remove(x)</div>
                         Remove o primeiro item encontrado na lista cujo valor é igual a x. Se não existir valor igual,
                         uma exceção ValueError é levantada.
-                    </li> <br>
-                    <li>
-                        list.pop([i]) <br>
+                    </div>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold"> list.pop([i])</div>
                         Remove um item em uma dada posição na lista e o retorna. Se nenhum índice é especificado,
                         a.pop() remove e devolve o último item da lista. (Os colchetes ao redor do i na demonstração do
                         método indica que o parâmetro é opcional, e não que é necessário escrever estes colchetes ao
                         chamar o método. Você verá este tipo de notação frequentemente na Biblioteca de Referência
                         Python.)
-                    </li> <br>
-                    <li>
-                        list.clear() <br>
+                    </div>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold"> list.clear()</div>
                         Remove todos os itens de uma lista. Equivalente a del a[:].
-                    </li> <br>
-                    <li>
-                        list.index(x[, start[, end]]) <br>
+                    </div>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold"> list.index(x[, start[, end]])</div>
                         Devolve o índice base-zero do primeiro item cujo valor é igual a x, levantando ValueError se
                         este valor não existe.
                         Os argumentos opcionais start e end são interpretados como nas notações de fatiamento e são
                         usados para limitar a busca para uma subsequência específica da lista. O índice retornado é
                         calculado relativo ao começo da sequência inteira e não referente ao argumento start.
-                    </li> <br>
-                    <li>
-                        list.count(x) <br>
+                    </div>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold"> list.count(x)</div>
                         Devolve o número de vezes em que x aparece na lista.
-                    </li> <br>
-                    <li>
-                        list.sort(*, key=None, reverse=False) <br>
-                        Ordena os itens na lista (os argumentos podem ser usados para personalizar a ordenação, veja a
-                        função sorted() para maiores explicações).
-                    </li> <br>
-                    <li>
-                        list.reverse() <br>
+                    </div>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold"> list.sort(*, key=None, reverse=False)</div>
+                        Ordena os itens na lista (os argumentos podem ser usados para personalizar a ordenação, veja a função sorted() para maiores explicações).
+                    </div>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold"> list.reverse()</div>
                         Inverte a ordem dos elementos na lista.
-                    </li> <br>
-                    <li>
-                        list.copy() <br>
+                    </div>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                        <div class="fw-bold"> list.copy()</div>
                         Devolve uma cópia rasa da lista. Equivalente a a[:].
-                    </li> <br>
-                </ul>
-            </div>
+                    </div>
+
+                </li>
+            </ol>
 
         </div>
     </article>
