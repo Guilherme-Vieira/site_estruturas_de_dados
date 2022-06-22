@@ -50,6 +50,40 @@
             </div>
         </nav>
     </header>
+    <article class="container">
+        <div class="text-center text-white">
+            <h1 class="p-4">Lista Duplamente Encadeada</h1>
+            <div class="row">
+                <p>Numa lista ligada simples, já vimos que é fácil adicionar ou remover do início da lista. Adicionar ou
+                    remover elementos no meio ou no final não é tão fácil. Tem que saber quem é o anterior.
+                    Além disso, a lista pode ser percorrida numa só direção.
+                    A estrutura que resolve esses dois problemas é a lista duplamente ligada. Cada elemento tem duas
+                    referências: para o no seguinte e para o anterior. Assim, também é interessante manter um ponteiro
+                    para o elemento final.</p>
+                <img class="col-md-6 mx-auto d-block img-fluid img-thumbnail p-3" src="/imagens/dupla.png"
+                    style="width: 350px; height: 250px;" alt="exemplo lista dupla">
+                <img class="col-md-6 mx-auto d-block img-fluid img-thumbnail p-3" src="/imagens/dupla02.png"
+                    style="width: 350px; height: 250px;" alt="exemplo lista dupla 02">
+
+                <p class="p-3">Para facilitar todos os algoritmos é conveniente que o primeiro e o último elemento sejam
+                    na
+                    verdade elementos sentinela da lista e que não tenham a função de nó. São usados apenas para
+                    facilitar a navegação. Podemos convencionar que seu campo info seja None para diferenciá-lo dos
+                    demais nós.</p>
+            </div>
+            <div class="row">
+                <h3 class="p-3">As vantagens e desvantagens das listas ligadas sobre as listas sequenciais</h3>
+                <p>Não resta dúvida que mexer com uma lista ligada é mais complexo que mexer com lista sequencial.
+                    A vantagem está na inserção e remoção de elementos. Não é necessário depender da eficiência dos
+                    métodos internos de alocação de memória (no caso do Python: append(), pop(), etc.). A alocação de
+                    memória, quando necessária, está por conta do seu programa.</p>
+                <img class="col-md-6 mx-auto d-block img-fluid img-thumbnail p-3" src="/imagens/dupla03.png"
+                    style="width: 350px; height: 250px;" alt="exemplo lista dupla 02">
+
+            </div>
+        </div>
+
+    </article>
 
     <footer class="container-fluid p-5 bg-dark text-center">
         <p class="secondary-color text-white">Guilherme Vieira &copy; 2022</p>
