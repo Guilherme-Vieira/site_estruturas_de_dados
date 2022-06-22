@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/python-logo01.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <title>Tutorial</title>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark text-center">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagens/python-logo01.png" alt="logo" width="30" height="24">
+                </a>
+                <a class="navbar-brand" href="index.html">Estrutura de dados</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="arvore.html">Arvore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="listas_encadeadas.html">Listas Encadeadas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="dupla.html">Listas Duplamente Encadeadas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <article>
+        <h1 class="text-center text-white p-4">Pilhas, Filas e Listas</h1>
+        <div class="container text-white">
+            <div class="row">
+                <h3 class="text-center p-3">O que é pilha?</h3>
+                <p>
+                    Uma pilha (stack) é uma coleção ordenada de itens onde a inserção de novos itens e a remoção de
+                    itens existentes sempre ocorrem na mesma extremidade. Este extremidade é comumente chamada de topo.
+                    A extremidade oposta ao topo é conhecida como base.
+                    Os itens armazenados na pilha que estão mais perto da base são aqueles que estão na pilha a mais
+                    tempo. O último item inserido é aquele que está na posição em que pode ser removido primeiro.</p>
+                <p>Este
+                    princípio de ordenação é as vezes chamado de LIFO, último a entrar primeiro a sair (last in first
+                    out). Os itens estão armazenados de acordo com o tempo de permanência na estrutura. Itens
+                    recentemente inseridos na estrutura estão mais próximos do topo, enquanto os itens mais antigos na
+                    estrutura estão perto da base.
+                </p>
+                <p>
+                    Muitos exemplos de pilhas ocorrem em situações cotidianas. Quase qualquer refeitório tem uma pilha
+                    de bandejas ou pratos onde você pega a bandeja ou prato que está no topo, descobrindo uma nova
+                    bandeja ou prato para o próximo cliente na fila.
+                </p>
+                <img class="col-md-6 rounded-5 mx-auto d-block shadow p-4" src="/imagens/pilha01.png"
+                    alt="exemplo pilha">
+                <p>Uma das idéias mais úteis relacionadas às pilhas vem da simples observação dos itens à medida que são
+                    inseridos e removidos. Suponha que você começa com uma mesa vazia. Agora, coloque um livro de cada
+                    vez na mesa, um sobre o outro. Você está construindo uma pilha. Considere o que acontece quando você
+                    começar a remover livros. A ordem que eles são removidos é exatamente a inversa da ordem em que
+                    foram colocados. As pilhas são fundamentalmente importantes, pois elas podem ser usadas para
+                    reverter a ordem dos itens. A ordem de inserção é a inversa da ordem de remoção. Figura 3 mostra a
+                    pilha de objetos de Python como ela foi criada e, novamente, como os itens são removidos. Preste
+                    atenção a ordem do objetos.</p>
+                <img class="col-md-6 rounded-5 mx-auto d-block shadow p-4" src="/imagens/pilha02.png"
+                    alt="exemplo pilha">
+            </div>
+            <div class="row">
+                <h3 class="text-center p-5">O que é Fila?</h3>
+                <p>Uma fila (queue) é uma coleção ordenada de itens em que a inserção de novos itens acontece em uma
+                    extremidade, chamado de “fim” (rear), e a remoção de itens existente ocorre no outro extremo,
+                    comumente chamado de “início” (front). Um elemento é inserido no fim da fila e faz o seu caminho em
+                    direção ao início, esperando até aquele momento em que é o próximo elemento a ser removido.</p>
+                <p>O item inserido mais recentemente na fila deve aguardar no final do coleção. O item que está na
+                    coleção há mais tempo está mais próximo do início. Este princípio de ordenação é às vezes chamado de
+                    FIFO, primeiro a entrar, primeiro a sair (first-in first-out). Também é conhecido como “primeiro a
+                    chegar, primeiro a ser servido” (first-come first-serverd).</p>
+                <p>O exemplo mais simples de uma fila é a fila típica que todos nós participarmos de tempos em tempos.
+                    Nós esperamos em uma fila do cinemaesperamos na fila do supermercado, e esperamos na fila da
+                    lanchonete (para pegarmos uma bandeja da pilha de bandejas). Filas bem comportadas são muito
+                    restritivas em que elas têm apenas uma maneira de entrarmos e apenas uma maneira de sairmos. Não é
+                    permitido furar a fila e sair antes de você ter esperado o tempo necessário para chegar ao início.
+                </p>
+                <img class="col-md-6 rounded-5 mx-auto d-block shadow p-4" src="/imagens/fila.png" alt="exemplo fila">
+            </div>
+            <div class="row">
+                <h3 class="text-center p-5">O que é uma lista?</h3>
+                <p>Ao longo da discussão das estruturas básicas de dados, usamos as listas do Python para implementar os tipos abstratos de dados apresentados. A lista (list) é uma mecanismo de coleção de itens poderoso, porém simples, que fornece ao programador com uma ampla variedade de operações. No entanto, nem toda linguagem de programação incluem uma coleção de listas nativa. Nestes casos, a noção de lista deve ser implementada pelo programador.</p>
+                <p>Uma lista é uma coleção de itens em que cada item tem uma posição relativa em relação aos outros. Mais especificamente, nos referiremos este tipo de lista como uma lista desordenada. Podemos considerar que a lista possui um primeiro item, um segundo item, um terceiro item e assim por diante. Nós também podemos no referirmos ao início da lista (o primeiro item) ou ao final da lista (o último item). Por simplicidade, vamos supor que as listas não podem conter itens duplicados.</p>
+                <p>Por exemplo, a coleção dos inteiros 54, 26, 93, 17, 77 e 31 pode representar uma lista simples e desordenada de pontuações de um exame. Note que nós os escrevemos como valores delimitados por vírgula, uma maneira comum de mostrar uma estrutura lista. Claro, o Python mostraria essa lista como :</p>
+                <p class="text-center font-monospace fw-bold p-3">math:'[54, 26, 93, 17, 77, 31]'.</p>
+            </div>
+
+        </div>
+    </article>
+    <footer class="container-fluid p-5 bg-dark text-center">
+        <p class="secondary-color text-white">Guilherme Vieira &copy; 2022</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+
+
+</body>
+
+</html>
