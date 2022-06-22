@@ -30,21 +30,113 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Pilhas, Filas e Listas</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Arvore</a>
+                            <a class="nav-link active" href="listas.html">Pilhas, Filas e Listas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Listas Encadeadas</a>
+                            <a class="nav-link active" href="tupla.html">Tupla e Dicionário</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="listas_encadeadas.html">Listas Encadeadas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active">Listas Duplamente Encadeadas</a>
+                            <a class="nav-link active" href="dupla.html">Listas Duplamente Encadeadas</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <article>
+        <h1 class="text-center text-white p-4">Árvore</h1>
+        <div class="container text-white">
+            <div class="row">
+                <h3 class="text-center p-3">O que é Árvore em Python?</h3>
+                <p class="col-md-6">Agora que já conhecemos estruturas de dados lineares, como pilhas e filas, e também
+                    adquirimos alguma experiência com recursão, nós iremos estudar uma estrutura de dados muito comum
+                    chamada árvore. Árvores são usadas em várias áreas da ciência da computação, incluindo sistemas
+                    operacionais, computação gráfica, bancos de dados e redes. Estruturas de dados de árvores têm muita
+                    coisa em comum com suas primas do mundo botânico. Toda árvore, como estrutura de dados, tem uma
+                    raiz, ramificações e folhas. A diferença entre uma árvore na natureza e uma árvore na ciência da
+                    computação é que estruturas de dados de árvores têm sua raiz no topo e as folhas na base.</p>
+                <p class="col-md-6">Antes de começarmos a estudar estruturas de dados de árvores, vamos dar uma olhada
+                    em alguns exemplos recorrentes. Nosso primeiro exemplo de árvore é uma árvore taxonômica da
+                    biologia. A Figura 1 mostra um exemplo de classificação biológica de alguns animais. A partir desse
+                    exemplo simples, podemos aprender diversas propriedades das árvores. A primeira que esse exemplo
+                    demonstra é que árvores são estruturas hierárquicas. Com isso, queremos dizer que árvores são
+                    estruturadas em níveis, com as coisas mais gerais próximas ao topo e as mais específicas próximas da
+                    base. O topo da hierarquia é o Reino, o próximo nível da árvore (os “filhos” do nível superior) é o
+                    Filo, depois a Classe, e assim por diante. Contudo, não importa o quanto descemos na árvore
+                    taxonômica: todos os organismos sempre são animais.</p>
+                <img class="col-md-6 rounded-3 mx-auto d-block img-fluid p-4" src="/imagens/arvore01.png"
+                    alt="exemplo de arvore" id="arvore" height="400px">
+            </div>
+            <div class="row">
+                <p class="p-4">Note que você pode começar pelo topo da árvore e descer por um caminho definido por
+                    círculos e setas
+                    até a base. A cada nível da árvore podemos fazer uma pergunta e seguir o caminho que está de acordo
+                    com a resposta que procuramos. Por exemplo, podemos perguntar: “Este animal é um Cordado ou um
+                    Artrópode?” Se a resposta for “Cordado”, então seguimos por esse caminho. Em seguida, podemos
+                    perguntar: “Este Cordado é um Mamífero?” Se não for, não temos mais como descer na árvore (pelo
+                    menos neste exemplo simplificado). Se estivermos no nível de Mamífero, podemos perguntar: “Este
+                    Mamífero é um Primata ou um Carnívoro?” Nós podemos continuar seguindo pelo caminho até que
+                    cheguemos às folhas da árvore, onde está o nome comum.
+                    Uma segunda propriedade das árvores é que todos os filhos de um nó são independentes dos filhos de
+                    um outro nó. Por exemplo, o Gênero Felis tem como filhos Domestica e Leo. O Gênero Musca também tem
+                    um filho denominado Domestica, mas trata-se de um nó diferente, não relacionado com o filho
+                    Domestica de Felis. Isso significa que nós podemos mudar o nó filho de Musca sem afetar os filhos de
+                    Felis.
+                    Uma terceira propriedade é que folha é única. Nós podemos especificar um caminho da raiz da árvore
+                    até uma folha que identifica univocamente cada espécie do reino animal. </p>
+                <p class="text-center">Por exemplo: Animalia →
+                    Chordate → Mammal → Carnivora → Felidae → Felis → Domestica.
+                </p>
+                <img class="colo-md-6 rounded-3 mx-auto d-block img-fluid p-3" src="/imagens/arvore02.png"
+                    alt="exemplo de arvore 02" style="width: 700px;height: 200px;" id="arvore">
+                <p class="p-4">A árvore do sistema de arquivos tem muito em comum com a árvore taxonômica. Você pode
+                    seguir um caminho da raiz até qualquer diretório. Esse caminho irá identificar univocamente esse
+                    subdiretório (e todos os arquivos contidos nele). Uma outra propriedade importante das árvores,
+                    derivada da sua natureza hierárquica, é que você pode mover porções inteiras de uma árvore (chamada
+                    subárvore) para algum outro braço sem afetar seus níveis hierárquicos inferiores. Por exemplo, nós
+                    poderíamos pegar a subárvore com raiz em /etc/, desacoplar o diretório etc/ da raiz e reacoplá-lo
+                    dentro de /usr/. Isso iria mudar o caminho que leva à pasta httpd de /etc/httpd para /usr/etc/httpd,
+                    mas não iria afetar o conteúdo ou os filhos do diretório httpd.</p>
+            </div>
+        </div>
+    </article>
+    <aside class="container text-center">
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <img src="/imagens/arvore_binaria.png" class="img-fluid rounded-start"
+                        alt=" exemplo arvore binaria">
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Árvore Binária</h5>
+                        <p class="card-text p-3">Uma árvore binária é uma estrutura de dados mais geral que uma lista
+                            encadeada. Este capítulo introduz algumas operações básicas sobre árvores binárias. O
+                            capítulo seguinte, Árvores binárias de busca, trata de uma aplicação fundamental. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <footer class="container-fluid p-5 bg-dark text-center">
+        <p class="secondary-color text-white">Guilherme Vieira &copy; 2022</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
 </body>
+
 </html>
