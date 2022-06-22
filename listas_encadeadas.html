@@ -51,8 +51,50 @@
         </nav>
     </header>
     <article class="container">
-            <h1 class="text-center text-white p-4">Listas Encadeadas</h1>
+        <div class="text-center text-white">
+            <h1 class="p-4">Listas Encadeadas</h1>
+            <h2 class="p-4">O que é uma Lista Encadeada (listas ligadas)?</h2>
+            <p>Para implementar uma lista desordenada, vamos construir o que é comumente conhecido como lista ligada.
+                Lembre-se de que precisamos ter certeza de que podemos manter o posicionamento relativo dos itens. No
+                entanto, não existe exigência alguma de que mantemos esse posicionamento na memória. Por exemplo,
+                considere a coleção de itens mostrados em Figura 1. Parece que esses valores foram colocados
+                aleatoriamente. Se pudermos manter algumas informações explícitas em cada item, ou seja, a localização
+                do próximo item (ver Figura 2), então o posição relativa de cada item pode ser expressa simplesmente
+                seguindo o link/ligaçcão de um item para o outro.</p>
+            <div class="row">
+                <img class="col-md-6 rounded-5 mx-auto d-block img-fluid p-3" src="/imagens/lista01.png"
+                    style="width: 350px; height: 250px;" alt="exemplo lista 01">
+                <img class="col-md-6 rounded-4 mx-auto d-block img-fluid p-3" src="/imagens/lista02.png"
+                    style="width: 350px; height: 250px;" alt="exemplo lista 02" id="lista">
+            </div>
+            <p class="p-3">É importante observar que a localização do primeiro item da lista deve ser explicitamente
+                especificada. Uma vez que sabemos onde está o primeiro item, o primeiro item pode nos dizer onde está o
+                segundo e assim por diante. A referência externa é geralmente chamada de cabeça (head) da lista.
+                Similarmente, o último item precisa saber que não há próximo item.</p>
+            <h3 class="p-4">A classe Node</h3>
+            <div class="row">
+                <p>O bloco básico para a construção da implementação da lista ligada é o nó (Node). Cada objeto nó deve
+                    conter pelo menos duas informações. Primeiro, o nó deve conter um item da lista. Vamos chamar isso
+                    de campo de dados (data field) do nó. Além disso, cada nó deve conter uma referência para o próximo
+                    nó. Listagem 1 mostra uma implementação em Python. Para construir um nó, você precisa fornecer os
+                    dados valores dos dados iniciais para o nó. Executar a declaração de atribuição abaixo produzirá um
+                    objeto de nó (Node) contendo o valor 93. Você deve notar que normalmente representamos um objeto nó
+                    como mostrado. A classe Node também inclui os métodos usuais para acessar e modificar os dados e a
+                    próxima referência.</p>
+                <img class="col-md-6 rounded-3 mx-auto d-block img-fluid p-3" src="/imagens/node.png"
+                    alt="exemplo lista 02" id="lista">
+                <p class="p-4">O valor de referência especial do Python, None, terá um papel importante na classe Node e depois na
+                    própria lista ligada. Uma referência para None denota o fato de que não há próximo nó. Observe no
+                    construtor que um nó é inicialmente criado com o next configurado para None. Como isso às vezes é
+                    chamado de “aterramento do nó” (grounding the node) vamos usar o símbolo padrão de terra (como em
+                    eletricidade) para denotar uma referência para None. É sempre uma boa ideia atribuir explicitamente
+                    None para seus valores de referência iniciais.</p>
+                <img class="col-md-6 rounded-3 mx-auto d-block img-fluid p-3" src="/imagens/node02.png"
+                    alt="exemplo lista 02" id="lista">
 
+
+            </div>
+        </div>
 
     </article>
 
